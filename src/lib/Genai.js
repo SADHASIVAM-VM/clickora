@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSyCWRaVEVOPP4_T4Z_p9nhRky9i9pemRdvM";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 
 // The client gets the API key from the environment variable `GEMINI_API_KEY`.

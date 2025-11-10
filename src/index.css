@@ -124,7 +124,7 @@
   font-family: "Urbanist";
 }
 .subTitle{
-  font-family: "Space Grotesk";
+  font-family: "Inter";
   font-weight: 400;
 }
 p{
@@ -132,14 +132,16 @@ p{
 }
 
 .loader {
-  width: 50px;
-  aspect-ratio: 1;
+  width: 60px;
+  height: 60px;
+
   border-radius: 50%;
-  background: 
-    radial-gradient(farthest-side,#898989 94%,#0000) top/8px 8px no-repeat,
-    conic-gradient(#0000 30%,#717171);
-  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
   animation: l13 1s infinite linear;
+   background: 
+    radial-gradient(farthest-side,#ffc4d6 94%,#ff5f5f00) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#ffcccc);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+ 
 }
 @keyframes l13{ 
   100%{transform: rotate(1turn)}
