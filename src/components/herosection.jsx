@@ -1,7 +1,38 @@
 import { motion } from "framer-motion";
-
+import {
+  GoogleGenAI,
+  createUserContent,
+  createPartFromUri,
+} from "@google/genai";
 
 export default function HeroSection() {
+
+
+  
+const API_KEY = "AIzaSyCWRaVEVOPP4_T4Z_p9nhRky9i9pemRdvM";
+
+
+
+const ai = new GoogleGenAI({apiKey : API_KEY});
+
+async function main(Imgpath) {
+  const myfile = await ai.files.upload({
+    file: Imgpath,
+    config: { mimeType: "image/jpeg" },
+  });
+
+  const response = await ai.models.generateContent({
+    model: "gemini-2.5-flash",
+    contents: createUserContent([
+      createPartFromUri(myfile.uri, myfile.mimeType),
+      "Caption this image.",
+    ]),
+  });
+  console.log(response.text);
+}
+
+main();
+
   return (
     <section className="min-h-[90vh] flex flex-col justify-center items-center text-center px-6">
         <div className=" ">

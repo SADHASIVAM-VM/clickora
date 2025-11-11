@@ -8,14 +8,14 @@ export function Text2Description(){
 
  const generateData = async (userInput)=>{
    const prompt = `
-You are an AI trained to write product content for Indian e-commerce platforms
+You are an E-commerece Experter to write description for products to showcase in Indian e-commerce platforms
 like Amazon.in, Flipkart, and Meesho.
 
 Your descriptions should:
-- Use friendly, concise English with optional Hindi-style tone mix
+- Use friendly, concise English and optimal
 - Mention features Indian customers care about (affordability, delivery, quality)
-- Avoid overly Western references
 - Include local search words (e.g., kurti, mobile cover, saree, tiffin box)
+- And it should be good and clear content to read and make the product rank in online shopping platform 
 
 Input: "${userInput}"
 
