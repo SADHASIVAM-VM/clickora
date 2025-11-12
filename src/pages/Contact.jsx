@@ -1,9 +1,12 @@
 // src/components/ContactSection.jsx
 import { motion } from "framer-motion";
 import { EnvelopeIcon, PhoneIcon, MapPinIcon, ClockIcon } from "@heroicons/react/24/outline";
+import Navbar from "../components/navbar";
 
 export default function ContactSection() {
   return (
+    <>
+    <Navbar/>
     <section className="relative py-20 bg-gradient-to-b from-gray-950 via-black to-gray-950 text-white overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-indigo-500/30 via-pink-500/20 to-transparent blur-3xl rounded-full -translate-x-1/2 -translate-y-1/3 pointer-events-none" />
@@ -131,5 +134,6 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
+    </>
   );
 }

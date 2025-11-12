@@ -15,13 +15,13 @@ export default function Navbar() {
     toast.success("Signed off..")
   }
   return (
-    <nav className="flex items-center justify-between px-16 py-6">
-          <div className="flex items-center space-x-1">
-           <img src="/logoo.png" alt=""  className="w-8"/>
-            <span className="text-xl font-semibold text-gray-800">Ora.</span>
+    <nav className="flex items-center justify-between md:px-8 px-2 lg:px-16 py-6">
+          <div className="flex items-center space-x-1" onClick={()=> navigate('/')}>
+           <img src="/logoo.png" alt=""  className="w-6 md:w-8"/>
+            <span className="text-sm md:text-xl font-semibold text-gray-800">Ora.</span>
           </div>
           
-          <div className="flex items-center space-x-8 text-gray-700">
+          <div className="flex items-center space-x-4 md:space-x-8 text-xs md:text-sm text-gray-700">
             <a href="/about" className="hover:text-gray-900">About</a>
             <a href="/" className="hover:text-gray-900">Pricing</a>
             <a href="contact" className="hover:text-gray-900">Contact</a>
