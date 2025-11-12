@@ -49,7 +49,7 @@ export default function FeatureSection() {
         >
           <div className="flex items-center gap-3 mb-6">
             <PhotoIcon className="h-8 w-8 text-blue-400" />
-            <h2 className="text-2xl flex gap-2 items-center font-bold subTitle">
+            <h2 className="text-md md:text-2xl flex gap-2 items-center font-bold subTitle">
               Image <ArrowRightCircle color="blue"/> Product Description
             </h2>
           </div>
@@ -80,7 +80,7 @@ export default function FeatureSection() {
           </label>
 
           <button
-            className="mt-6 w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 font-semibold hover:scale-105 transition-transform shadow-lg"
+            className="mt-6 w-full text-xs text-white py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 font-semibold hover:scale-105 transition-transform shadow-lg"
           >
             Generate From Image (Coming Soon)
           </button>
@@ -97,7 +97,7 @@ export default function FeatureSection() {
         >
           <div className="flex items-centergap-3 mb-6">
             
-            <h2 className="text-xl md:text-2xl font-semibold subTitle text-black flex items-center gap-2">
+            <h2 className="text-md md:text-2xl font-semibold subTitle text-black flex items-center gap-2">
               Text <ArrowRightCircleIcon color="red"/>  Product Description & SEO
             </h2>
           </div>
