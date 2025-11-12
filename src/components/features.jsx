@@ -93,11 +93,11 @@ export default function FeatureSection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="rounded-3xl p-8  bg-white border border-gray-200   transition-all duration-300"
+          className="rounded-3xl p-3 md:p-8  bg-white border border-gray-200   transition-all duration-300"
         >
           <div className="flex items-centergap-3 mb-6">
             
-            <h2 className="text-2xl font-semibold subTitle text-black flex items-center gap-2">
+            <h2 className="text-xl md:text-2xl font-semibold subTitle text-black flex items-center gap-2">
               Text <ArrowRightCircleIcon color="red"/>  Product Description & SEO
             </h2>
           </div>
@@ -112,7 +112,7 @@ export default function FeatureSection() {
 
           <button
             onClick={handleGenerate}
-            className="mt-6 p-3 text-gray-800 text-sm rounded-xl bg-gradient-to-r from-blue-200 via-blue-100 border font-semibold hover:scale-105 transition-transform "
+            className="mt-6 p-3 text-gray-800 text-xs md:text-sm rounded-xl bg-gradient-to-r from-blue-200 via-blue-100 border font-semibold hover:scale-105 transition-transform "
           >
             Generate Description
           </button>
@@ -120,7 +120,7 @@ export default function FeatureSection() {
           {/* Result Section */}
           {!contentLoading ? (
             responseData && (
-              <div className="mt-8 p-6 bg-gray-50 rounded-2xl border border-white/10 shadow-inner">
+              <div className="mt-8 p-2 md:p-6 bg-gray-50 rounded-2xl border border-white/10 shadow-inner">
                 <h3 className="text-lg font-semibold mb-2  text-black/80">
                   {responseData.title}
                 </h3>
