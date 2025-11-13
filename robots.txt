@@ -1,0 +1,15 @@
+# robots.txt for https://clickora-three.vercel.app
+
+User-agent: *
+# Allow all important pages
+Allow: /
+
+# Disallow sensitive or internal routes (adjust if needed)
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /login/
+Disallow: /signup/
+
+# Sitemap location
+Sitemap: https://clickora-three.vercel.app/sitemap.xml
