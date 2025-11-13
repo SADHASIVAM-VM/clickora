@@ -12,6 +12,6 @@ import { Navigate } from 'react-router-dom';
 
 
 
-  return user ? children : <Navigate to="/login" replace />;
+  return user ? children : <Navigate to="/login"/>;
 }
 
